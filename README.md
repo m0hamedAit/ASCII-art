@@ -20,5 +20,5 @@ This script will help you transform your images to ASCII art, with colors or wit
 
     #### toWhiteAndWhitespace :
 
-    ![Example](./images/Example.png "example")
+    ![Example](images/Example.png)
 
