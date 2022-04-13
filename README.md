@@ -30,8 +30,8 @@ This script will help you transform your images to ASCII art, with colors or wit
 
 <p align="center">
     <b>toRGB :</b><br>
-  <img src="./images/example1.png" alt="" width="200"/><br>
+  <img src="./images/example1.PNG" alt="" width="200"/><br>
     <b>toWhiteAndWhitespace :</b><br>
-  <img src="./images/example2.png" alt="" width="200" height="190"/><br>
+  <img src="./images/example2.PNG" alt="" width="200" height="190"/><br>
 </p>
 
