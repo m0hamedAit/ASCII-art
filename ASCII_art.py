@@ -19,7 +19,7 @@ def toRGB(img,char=''):
   for i in resized :
     for j in i :
       if(char==''):
-        print(colored(j[2],j[1],j[0], randomASCIIChar), end="")
+        print(colored(j[2],j[1],j[0], randomASCIIChar()), end="")
       else:
         print(colored(j[2],j[1],j[0], char), end="")
     print('')  
@@ -33,9 +33,9 @@ def toBlackAndWhite(img, char=''):
     for j in i:
       if(char==''):
         if(j == 0):
-          print(colored(0,0,0,randomASCIIChar),end="")
+          print(colored(0,0,0,randomASCIIChar()),end="")
         elif(j==255):
-          print(colored(255,255,255,randomASCIIChar), end="")
+          print(colored(255,255,255,randomASCIIChar()), end="")
       else:
         if(j == 0):
           print(colored(0,0,0,char),end="")
@@ -50,7 +50,7 @@ def toGray(img, char=''):
   for i in grayImage :
     for j in i:
       if(char==''):
-        print(colored(j,j,j,randomASCIIChar),end="")
+        print(colored(j,j,j,randomASCIIChar()),end="")
       else :
         print(colored(j,j,j,char),end="")
     print("")
@@ -63,7 +63,7 @@ def toBlackAndWhitespace(img, char=''):
   for i in blackWhiteImage :  
     for j in i:
       if(char=='' and j == 0):
-        print(randomASCIIChar,end="")
+        print(randomASCIIChar(),end="")
       elif(j == 0):
         print(char,end="")
       elif(j==255):
@@ -78,7 +78,7 @@ def toWhiteAndWhitespace(img, char=''):
   for i in blackWhiteImage :  
     for j in i:
       if(char=='' and j == 255):
-        print(randomASCIIChar,end="")
+        print(randomASCIIChar(),end="")
       elif(char != '' and j == 255):
         print(char,end="")
       elif(j==0):
